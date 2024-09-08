@@ -4,11 +4,11 @@ import Footer from "../components/shared/Footer/Footer";
 
 const MainLayout = () => {
   return (
-    <>
+    <section className="font-poppins">
       <Navbar />
       <Outlet />
       <Footer />
-    </>
+    </section>
   );
 };
 

@@ -10,7 +10,8 @@ export default {
       subtitle: "#595959",
       list: "#404A3D",
       footer: "#F8F7F0",
-      ash: "#999999"
+      ash: "#999999",
+      nav: "#1A1A1A",
     },
     fontFamily: {
       poppins: "'Poppins', sans-serif",
