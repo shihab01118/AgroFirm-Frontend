@@ -4,10 +4,12 @@ export default {
   theme: {
     colors: {
       primary: "#5B8C51",
+      primaryDark : "#5F9154",
       secondary: "#EDDD5E",
+      secondaryDark : "#E8D331",
       white: "#FFFFFF",
       title: "#333333",
-      subtitle: "#595959",
+      body: "#595959",
       list: "#404A3D",
       footer: "#F8F7F0",
       ash: "#999999",

@@ -5,9 +5,9 @@ const Button = ({ primary, secondary, white, value }) => {
   return (
     <button
       className={`py-2 lg:py-4 px-5 lg:px-9 rounded-full flex items-center gap-2 transition-all duration-200 shadow-sm text-title ${
-        primary ? "bg-primary hover:bg-[#5f9154]" : ""
-      } ${secondary ? "bg-secondary hover:bg-[#e8d331]" : ""} ${
-        white ? "bg-white" : ""
+        primary ? "bg-primary hover:bg-primaryDark" : ""
+      } ${secondary ? "bg-secondary hover:bg-secondaryDark" : ""} ${
+        white ? "bg-white hover:bg-secondary" : ""
       }`}
     >
       <span className="font-medium">{value}</span>
