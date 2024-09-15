@@ -8,10 +8,14 @@ import {
 import { FaTwitter } from "react-icons/fa6";
 import FooterBg from "../../../assets/images/FooterBG.png";
 import Logo from "../../../assets/images/Logo.png";
+import FooterTopImg from "../../../assets/images/FooterTop.png";
 
 const Footer = () => {
   return (
     <footer>
+      <div className="w-full">
+        <img src={FooterTopImg} alt="background" className="w-full" />
+      </div>
       <div className="bg-secondary h-[120px] flex items-center">
         <div className="max-w-[1200px] w-full mx-auto px-4 lg:px-0 flex justify-between items-center">
           <div className="flex items-center gap-2.5 text-list">

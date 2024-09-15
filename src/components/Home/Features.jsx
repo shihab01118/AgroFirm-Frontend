@@ -6,8 +6,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Features = () => {
   return (
-    <section className="max-w-[1200px] w-full mx-auto px-4 lg:px-0 lg:absolute z-40 left-1/2 transform lg:-translate-x-1/2 -bottom-[63%]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="max-w-[1200px] w-full mx-auto px-4 lg:px-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {features?.map((feature) => (
           <div
             key={feature?.id}

@@ -33,7 +33,7 @@ const FreeQuote = () => {
         </div>
 
         <div className="w-full lg:w-1/2">
-          <p className="text-white leading-7 max-w-lg mb-10">
+          <p className="text-white leading-7 max-w-lg mb-10 pt-6">
             Lorem ipsum dolor sit amet consectetur. Amet mauris nam ornare
             tempus. Enim ultrices massa nibh ut adipiscing eu dignissim erat.
           </p>
@@ -41,13 +41,13 @@ const FreeQuote = () => {
             {quotes.map((item) => (
               <div
                 key={item?.id}
-                className="hover:bg-white hover:rounded-lg px-4 py-6 border-b border-white border-opacity-20 flex items-center gap-8 group transition-all duration-150 row"
+                className="hover:bg-white hover:rounded-lg px-4 py-5 border-b border-white border-opacity-20 flex items-center gap-8 group transition-all duration-150 row"
               >
-                <h4 className="text-title font-medium text-6xl group-hover:text-primary number">
+                <h4 className="text-title font-medium text-7xl group-hover:text-primary number">
                   {item?.no}
                 </h4>
-                <p className="text-title leading-7 text-xl font-medium">{item?.title}</p>
-                <p className="text-body leading-6">{item?.description}</p>
+                <p className="text-white group-hover:text-primary leading-7 text-xl font-medium">{item?.title}</p>
+                <p className="text-white text-opacity-60 group-hover:text-body leading-6">{item?.description}</p>
               </div>
             ))}
           </div>
