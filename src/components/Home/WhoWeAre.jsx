@@ -12,7 +12,7 @@ const WhoWeAre = () => {
       style={{ backgroundImage: `url(${sectionBG})` }}
     >
       <div
-        className="max-w-[1200px] w-full mx-auto py-20 px-4 lg:px-0 flex justify-between
+        className="max-w-[1200px] w-full mx-auto lg:pt-[180px] py-24 px-4 lg:px-0 flex justify-between
        items-center gap-16"
       >
         <div className="w-full relative">

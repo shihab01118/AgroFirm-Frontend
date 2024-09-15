@@ -1,0 +1,8 @@
+.number {
+  color: #5b8c51;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.row:hover .number {
+  -webkit-text-stroke: 0px #fff;
+}

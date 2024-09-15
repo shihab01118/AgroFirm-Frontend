@@ -4,7 +4,7 @@ const IconButton = ({ Icon, small, white }) => {
   return (
     <button
       className={`w-20 h-20 rounded-full bg-secondary flex justify-center items-center transition duration-200 hover:bg-secondaryDark ${
-        small ? "w-10 h-10" : ""
+        small ? "w-[40px] h-[40px]" : ""
       } ${white ? "bg-white" : ""}`}
     >
       <Icon className={`text-title text-4xl ${small ? "text-xl" : ""}`} />

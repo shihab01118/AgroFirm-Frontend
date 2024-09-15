@@ -14,6 +14,7 @@ export default {
       footer: "#F8F7F0",
       ash: "#999999",
       nav: "#1A1A1A",
+      transparent: "#FFFFFF00"
     },
     fontFamily: {
       poppins: "'Poppins', sans-serif",

@@ -3,6 +3,9 @@ import vegetablePic from "../../assets/images/FreeQuote.png";
 import { MdMessage } from "react-icons/md";
 import IconButton from "../shared/IconButton/IconButton";
 
+// styles
+import "./FreeQuote.css";
+
 const FreeQuote = () => {
   return (
     <section
@@ -30,7 +33,24 @@ const FreeQuote = () => {
         </div>
 
         <div className="w-full lg:w-1/2">
-            <p className="text-white leading-7 max-w-lg">Lorem ipsum dolor sit amet consectetur. Amet mauris nam ornare tempus. Enim ultrices massa nibh ut adipiscing eu dignissim erat.</p>
+          <p className="text-white leading-7 max-w-lg mb-10">
+            Lorem ipsum dolor sit amet consectetur. Amet mauris nam ornare
+            tempus. Enim ultrices massa nibh ut adipiscing eu dignissim erat.
+          </p>
+          <div className="flex flex-col">
+            {quotes.map((item) => (
+              <div
+                key={item?.id}
+                className="hover:bg-white hover:rounded-lg px-4 py-6 border-b border-white border-opacity-20 flex items-center gap-8 group transition-all duration-150 row"
+              >
+                <h4 className="text-title font-medium text-6xl group-hover:text-primary number">
+                  {item?.no}
+                </h4>
+                <p className="text-title leading-7 text-xl font-medium">{item?.title}</p>
+                <p className="text-body leading-6">{item?.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -38,3 +58,30 @@ const FreeQuote = () => {
 };
 
 export default FreeQuote;
+
+const quotes = [
+  {
+    id: 1,
+    no: "01",
+    title: "Schedule Your Experience",
+    description: "Quisqu tell us risus adpis viera bibe um urna.",
+  },
+  {
+    id: 2,
+    no: "02",
+    title: "Get Profession Advice",
+    description: "Quisqu tell us risus adpis viera bibe um urna.",
+  },
+  {
+    id: 3,
+    no: "03",
+    title: "Meet Our Expert Farmer",
+    description: "Quisqu tell us risus adpis viera bibe um urna.",
+  },
+  {
+    id: 4,
+    no: "04",
+    title: "Now Get Best Products",
+    description: "Quisqu tell us risus adpis viera bibe um urna.",
+  },
+];
