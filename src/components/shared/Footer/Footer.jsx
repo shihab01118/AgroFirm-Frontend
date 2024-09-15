@@ -44,10 +44,10 @@ const Footer = () => {
         style={{ backgroundImage: `url(${FooterBg})` }}
       >
         <div className="max-w-[1200px] w-full mx-auto px-4 lg:px-0">
-          <div className="grid grid-cols-3 py-12">
+          <div className="grid grid-cols-3 py-24">
             <div>
               <img src={Logo} alt="Logo" />
-              <p className="my-6 text-body">
+              <p className="my-8 text-body">
                 Lorem ipsum dolor sit amet consectetur. Urna nam congue tempor
                 aenean in molestie elementum eget.
               </p>
@@ -68,9 +68,9 @@ const Footer = () => {
                 Lorem ipsum dolor sit amet consectetur. Rutrum ut ipsum cursus
                 massa est.
               </h3>
-              <div className="grid grid-cols-3 mt-8">
+              <div className="grid grid-cols-3 mt-10">
                 <div>
-                  <p className="text-list font-medium text-lg mb-5">
+                  <p className="text-list font-medium text-lg mb-6">
                     Useful Link
                   </p>
                   <div className="space-y-2 text-[15px] text-body">
@@ -80,7 +80,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-list font-medium text-lg mb-5">
+                  <p className="text-list font-medium text-lg mb-6">
                     Working Time
                   </p>
                   <div className="space-y-2 text-[15px] text-body">
@@ -90,7 +90,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="pl-16">
-                  <p className="text-list font-medium text-lg mb-5">
+                  <p className="text-list font-medium text-lg mb-6">
                     Our address
                   </p>
                   <div className="space-y-2 text-[15px] text-body">

@@ -24,7 +24,7 @@ const WhoWeAre = () => {
           </div>
         </div>
         <div className="w-full">
-          <p className="px-3 py-1 bg-white rounded-full text-sm text-primary">
+          <p className="px-3 py-1 bg-white rounded-full text-sm text-primary w-fit font-medium">
             Who We Are
           </p>
           <h2 className="text-[32px] font-medium mt-2 mb-5">{`We're Committed to Caring.`}</h2>
