@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 // images
 import StoreBg from "../../assets/images/StoreBG.png";
@@ -58,10 +58,9 @@ const Store = () => {
             stretch: 0,
             depth: 100,
             modifier: 2.5,
-            // slideShadows: true,
           }}
           pagination={{ clickable: true }}
-          modules={[EffectCoverflow, Pagination]}
+          modules={[EffectCoverflow, Pagination, Autoplay]}
           className="mySwiper w-full"
         >
           <SwiperSlide>
