@@ -64,46 +64,54 @@ const Services = () => {
             </h3>
           </div>
           <div className="flex gap-3.5 mt-auto">
-            <IconButton Icon={FaArrowLeft} small />
-            <IconButton Icon={FaArrowRight} small />
+            <div onClick={handleLeftClick}>
+              <IconButton Icon={FaArrowLeft} small disabled={isLeftDisabled} />
+            </div>
+            <div onClick={handleRightClick}>
+              <IconButton
+                Icon={FaArrowRight}
+                small
+                disabled={isRightDisabled}
+              />
+            </div>
           </div>
         </div>
 
         {/* services cards */}
         <div className="flex overflow-hidden w-full">
           <div
-            className="flex transition-transform duration-300 ease-in-out gap-7 w-full"
+            className="flex transition-transform duration-300 gap-6 ease-in-out w-full"
             style={{
-              transform: `translateX(-${(currentIndex / cardsToShow) * 100}%)`,
+              transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)`,
             }}
           >
-            {cards
-              .slice(currentIndex, currentIndex + cardsToShow)
-              .map((card, index) => (
-                <div
-                  key={index}
-                  className={`flex-none p-5 pb-8 w-fit bg-white rounded-2xl relative`}
-                >
-                  <img
-                    src={card.image}
-                    alt="image"
-                    className="rounded-2xl mb-8"
-                  />
-                  <div className="flex gap-1.5 items-center mb-3">
-                    <GoDotFill className="text-secondary" />
-                    <span className="uppercase text-sm text-[#999999]">
-                      {card.category.toString()}
-                    </span>
-                  </div>
-                  <h3 className="text-title font-medium text-2xl mb-4">
-                    {card.title}
-                  </h3>
-                  <p className="text-body leading-7 max-w-[300px]">{card.description}</p>
-                  <div className="absolute bottom-2 right-2">
-                    <IconButton Icon={FiArrowUpRight} small />
-                  </div>
+            {cards.map((card, index) => (
+              <div
+                key={index}
+                className="flex-none p-5 pb-8 w-fit bg-white rounded-2xl relative"
+              >
+                <img
+                  src={card.image}
+                  alt="service card"
+                  className="rounded-2xl mb-8"
+                />
+                <div className="flex gap-1.5 items-center mb-3">
+                  <GoDotFill className="text-secondary" />
+                  <span className="uppercase text-sm text-[#999999]">
+                    {card.category}
+                  </span>
                 </div>
-              ))}
+                <h3 className="text-title font-medium text-2xl mb-4">
+                  {card.title}
+                </h3>
+                <p className="text-body leading-7 max-w-[300px]">
+                  {card.description}
+                </p>
+                <div className="absolute bottom-2 right-2">
+                  <IconButton Icon={FiArrowUpRight} small />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -121,7 +129,7 @@ const cards = [
     description:
       "Nullam porta enim vel tellus comm, eget laoreet odio ultrices.",
     image: Service1,
-    link: "#"
+    link: "#",
   },
   {
     id: 2,
@@ -130,7 +138,7 @@ const cards = [
     description:
       "Nullam porta enim vel tellus comm, eget laoreet odio ultrices.",
     image: Service2,
-    link: "#"
+    link: "#",
   },
   {
     id: 3,
@@ -139,7 +147,7 @@ const cards = [
     description:
       "Nullam porta enim vel tellus comm, eget laoreet odio ultrices.",
     image: Service3,
-    link: "#"
+    link: "#",
   },
   {
     id: 4,
@@ -148,7 +156,7 @@ const cards = [
     description:
       "Nullam porta enim vel tellus comm, eget laoreet odio ultrices.",
     image: Service2,
-    link: "#"
+    link: "#",
   },
   {
     id: 5,
@@ -157,7 +165,7 @@ const cards = [
     description:
       "Nullam porta enim vel tellus comm, eget laoreet odio ultrices.",
     image: Service1,
-    link: "#"
+    link: "#",
   },
   {
     id: 6,
@@ -166,6 +174,6 @@ const cards = [
     description:
       "Nullam porta enim vel tellus comm, eget laoreet odio ultrices.",
     image: Service2,
-    link: "#"
+    link: "#",
   },
 ];
