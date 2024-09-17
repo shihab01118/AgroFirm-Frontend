@@ -1,3 +1,6 @@
+import CountUp from "react-countup";
+
+// images
 import sectionBG from "../../assets/images/WhoWeAreBG.png";
 import Farmer from "../../assets/images/WhoWeAre.png";
 
@@ -12,22 +15,25 @@ const WhoWeAre = () => {
       style={{ backgroundImage: `url(${sectionBG})` }}
     >
       <div
-        className="max-w-[1200px] w-full mx-auto lg:pt-[180px] py-24 px-4 lg:px-0 flex justify-between
+        className="max-w-[1200px] w-full mx-auto lg:pt-[180px] py-24 px-4 lg:px-0 flex flex-col lg:flex-row justify-between
        items-center gap-16"
       >
         <div className="w-full relative">
           <img src={Farmer} alt="Farmer" />
 
-          <div className="bg-secondary absolute right-0 bottom-0 w-[41%] h-[31%] rounded-[28px] p-4">
-            <p className="text-list font-signika font-semibold text-7xl border-b-2 w-fit border-b-[#666666] border-opacity-30 pb-1">635+</p>
-            <p className="text-[#666666] mt-6">Growth Tons of Harvest</p>
+          <div className="bg-secondary absolute right-0 bottom-0 w-[41%] h-[31%] rounded-[28px] px-3 py-1 lg:p-4 ">
+            <div className="text-list font-signika font-semibold text-5xl lg:text-7xl border-b-2 w-fit border-b-[#666666] border-opacity-30 pb-1 mx-auto lg:mx-0">
+              <CountUp className="" end={635} enableScrollSpy />
+              <span>+</span>
+            </div>
+            <p className="text-[#666666] mt-2 lg:mt-6 text-[13px] lg:text-base text-center lg:text-left">Growth Tons of Harvest</p>
           </div>
         </div>
         <div className="w-full">
           <p className="px-3 py-1 bg-white rounded-full text-sm text-primary w-fit font-medium">
             Who We Are
           </p>
-          <h2 className="text-[32px] font-medium mt-2 mb-5">{`We're Committed to Caring.`}</h2>
+          <h2 className="text-2xl lg:text-3xl font-medium mt-4 mb-5 leading-[36px] lg:leading-[48px]">{`We're Committed to Caring`}</h2>
           <p className="text-body text-justify leading-7">
             Greetings from Dosner Organic Farms.We distribute only organic herbs
             and produce directly to consumers.

@@ -1,13 +1,17 @@
 import Banner from "../../components/Home/Banner";
-import FreeQuote from "../../components/Home/FreeQuote";
+import Features from "../../components/Home/Features";
+import WhoWeAre from "../../components/Home/WhoWeAre";
 import Services from "../../components/Home/Services";
 import Store from "../../components/Home/Store";
-import WhoWeAre from "../../components/Home/WhoWeAre";
+import FreeQuote from "../../components/Home/FreeQuote";
 
 const Home = () => {
   return (
     <>
       <Banner />
+      <div className="py-20 lg:hidden">
+        <Features />
+      </div>
       <WhoWeAre />
       <Services />
       <Store />

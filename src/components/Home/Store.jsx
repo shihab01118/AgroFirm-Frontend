@@ -25,15 +25,15 @@ const Store = () => {
       style={{ backgroundImage: `url(${StoreBg})` }}
     >
       {/* store section */}
-      <div className="max-w-[1200px] lg:mx-auto w-full mx-4 p-8 bg-white rounded-[40px] flex flex-col lg:flex-row items-center h-fit ">
+      <div className="max-w-[1200px] lg:mx-auto w-full mx-4 lg:p-8 lg:bg-white rounded-[40px] flex flex-col gap-16 lg:gap-0 lg:flex-row items-center h-fit ">
         <div className="w-full lg:w-1/2">
-          <img src={Vegetables} alt="vegetables" />
+          <img src={Vegetables} alt="vegetables" className="w-[93%] rounded-lg" />
         </div>
-        <div className="w-full lg:w-1/2 text-center lg:text-left lg:ml-20">
-          <p className="py-1 px-3 rounded-full text-sm bg-[#F8F7F0] text-primary font-medium w-fit mb-3">
+        <div className="w-full lg:w-1/2 text-left lg:ml-20">
+          <p className="py-1 px-3 rounded-full text-sm bg-[#F8F7F0] text-primary font-medium w-fit mb-4">
             Our Store
           </p>
-          <h3 className="text-title font-medium text-3xl max-w-[365px] leading-[45px] mb-5">
+          <h3 className="text-title font-medium text-2xl lg:text-3xl max-w-[365px] leading-[36px] lg:leading-[48px] mb-5">
             Organic Vegetables in Our Store
           </h3>
           <p className="text-body leading-7 mb-8">

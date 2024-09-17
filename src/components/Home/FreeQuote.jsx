@@ -17,7 +17,7 @@ const FreeQuote = () => {
           <span className="px-3 py-1 rounded-full bg-white text-primary text-sm font-medium">
             Free Quote
           </span>
-          <h3 className="text-white text-[32px] font-medium leading-[48px] mt-2 mb-10 mr-16">
+          <h3 className="text-white text-2xl lg:text-3xl font-medium leading-[36px] lg:leading-[48px] mt-4 mb-10 lg:mr-16">
             Agriculture Matters to the Future of Development
           </h3>
           <div className="relative">
@@ -26,7 +26,7 @@ const FreeQuote = () => {
               alt="free-quote"
               className="rounded-[40px]"
             />
-            <div className="absolute bottom-0 right-[72px]">
+            <div className="absolute bottom-0 right-0 lg:right-[72px]">
               <IconButton Icon={MdMessage} />
             </div>
           </div>
@@ -41,13 +41,13 @@ const FreeQuote = () => {
             {quotes.map((item) => (
               <div
                 key={item?.id}
-                className="hover:bg-white hover:rounded-lg px-4 py-5 border-b border-white border-opacity-20 flex items-center gap-8 group transition-all duration-150 row"
+                className="hover:bg-white hover:rounded-lg px-2 lg:px-4 py-5 border-b border-white border-opacity-20 flex items-center gap-3.5 lg:gap-8 group transition-all duration-150 row"
               >
-                <h4 className="text-title font-medium text-7xl group-hover:text-primary number">
+                <h4 className="text-title font-medium text-4xl lg:text-7xl group-hover:text-primary number w-12 lg:w-auto">
                   {item?.no}
                 </h4>
-                <p className="text-white group-hover:text-primary leading-7 text-xl font-medium">{item?.title}</p>
-                <p className="text-white text-opacity-60 group-hover:text-body leading-6">{item?.description}</p>
+                <p className="text-white group-hover:text-primary leading-7 lg:text-xl font-medium min-w-[135px] lg:w-auto">{item?.title}</p>
+                <p className="text-white text-sm lg:text-base text-opacity-60 group-hover:text-body leading-6">{item?.description}</p>
               </div>
             ))}
           </div>

@@ -21,16 +21,21 @@ const Services = () => {
   // Handle window resize for responsiveness
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setCardsToShow(1); // Small screen
-      } else {
-        setCardsToShow(3); // Large screen
+      if (typeof window !== "undefined") {
+        if (window.innerWidth < 768) {
+          setCardsToShow(1); // Small screen
+        } else {
+          setCardsToShow(3); // Large screen
+        }
       }
     };
-
+  
     window.addEventListener("resize", handleResize);
     handleResize(); // Call it once to set the initial state
-    return () => window.removeEventListener("resize", handleResize);
+  
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const isLeftDisabled = currentIndex === 0;
@@ -53,17 +58,17 @@ const Services = () => {
       className="bg-center bg-cover bg-no-repeat min-h-screen py-24 flex items-center justify-center"
       style={{ backgroundImage: `url(${ServicesBG})` }}
     >
-      <div className="max-w-[1200px] w-full lg:mx-auto mx-4">
-        <div className="mb-12 flex justify-between">
+      <div className="max-w-[1200px] w-full lg:mx-auto">
+        <div className="mb-6 lg:mb-12 flex flex-col lg:flex-row gap-8 justify-between px-4 lg:px-0">
           <div>
             <p className="text-primary bg-white px-3 py-1 rounded-full w-fit text-sm font-medium mb-4">
               Our Services
             </p>
-            <h3 className="text-white font-medium text-3xl">
+            <h3 className="text-white font-medium text-2xl lg:text-3xl leading-[36px] lg:leading-[48px]">
               Best Agricultural Services
             </h3>
           </div>
-          <div className="flex gap-3.5 mt-auto">
+          <div className="flex gap-3.5 mt-auto justify-end">
             <div onClick={handleLeftClick}>
               <IconButton Icon={FaArrowLeft} small disabled={isLeftDisabled} />
             </div>
@@ -80,7 +85,7 @@ const Services = () => {
         {/* services cards */}
         <div className="flex overflow-hidden w-full">
           <div
-            className="flex transition-transform duration-300 gap-6 ease-in-out w-full"
+            className="flex transition-transform duration-300 lg:gap-6 ease-in-out w-full"
             style={{
               transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)`,
             }}
@@ -88,12 +93,12 @@ const Services = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="flex-none p-5 pb-8 w-fit bg-white rounded-2xl relative"
+                className="flex-none p-5 pb-8 w-full lg:w-fit bg-white rounded-2xl relative"
               >
                 <img
                   src={card.image}
                   alt="service card"
-                  className="rounded-2xl mb-8"
+                  className="rounded-2xl mb-8 w-full lg:w-fit"
                 />
                 <div className="flex gap-1.5 items-center mb-3">
                   <GoDotFill className="text-secondary" />
