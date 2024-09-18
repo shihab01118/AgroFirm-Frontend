@@ -86,7 +86,7 @@ const Navbar = () => {
 
       {/* navbar bottom */}
       <div className="bg-white hidden lg:block">
-        <div className="max-w-[1200px] w-full mx-auto py-2.5 flex justify-between items-center">
+        <div className="max-w-[1200px] w-full mx-auto py-4 flex justify-between items-center">
           {/* logo */}
           <div>
             <img src="/logo.png" alt="Pranto" />

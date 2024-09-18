@@ -6,8 +6,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Features = () => {
   return (
-    <section className="max-w-[1200px] w-full mx-auto px-4 lg:px-0 lg:absolute z-40 left-1/2 transform lg:-translate-x-1/2 -bottom-[63%]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="max-w-[1200px] w-full lg:mx-auto px-4 lg:py-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {features?.map((feature) => (
           <div
             key={feature?.id}
@@ -17,11 +17,11 @@ const Features = () => {
               <div className="bg-primary w-[60px] h-[60px] rounded-full flex items-center justify-center">
                 <img src={feature?.icon} alt="icon" />
               </div>
-              <h4 className="text-title text-2xl font-medium">
+              <h4 className="text-title text-xl lg:text-2xl font-medium">
                 {feature?.title}
               </h4>
             </div>
-            <p className="text-body leading-6 border-t pt-3 border-list border-opacity-20 max-w-[320px]">
+            <p className="text-body text-sm lg:text-base leading-6 border-t pt-3 border-list border-opacity-20 max-w-[290px] lg:max-w-[320px]">
               {feature?.description}
             </p>
             <div className="absolute bottom-1 right-1">
