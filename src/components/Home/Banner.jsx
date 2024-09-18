@@ -5,7 +5,7 @@ import Features from "./Features";
 const Banner = () => {
   return (
     <section
-      className="bg-cover bg-center bg-no-repeat min-h-screen lg:min-h-[780px] lg:flex relative"
+      className="bg-cover bg-center bg-no-repeat min-h-[75vh] lg:min-h-[780px] flex items-center lg:items-start relative"
       style={{ backgroundImage: `url(${banner})` }}
     >
       <div className="max-w-[1200px] w-full mx-auto pt-24 lg:pt-[130px] pb-24 px-4 lg:px-0 text-white">

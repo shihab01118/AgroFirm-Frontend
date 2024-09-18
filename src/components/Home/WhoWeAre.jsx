@@ -38,7 +38,7 @@ const WhoWeAre = () => {
             Greetings from Dosner Organic Farms.We distribute only organic herbs
             and produce directly to consumers.
           </p>
-          <div className="mt-8 mb-10 grid grid-cols-1 lg:grid-cols-2 text-list">
+          <div className="mt-8 mb-10 grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-0 text-list">
             <div className="space-y-3">
               <div className="flex items-center gap-2.5">
                 <FaCheckCircle className="text-secondary text-xl" />

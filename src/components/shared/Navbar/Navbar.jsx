@@ -94,15 +94,15 @@ const Navbar = () => {
           {/* navlinks */}
           <div>
             <ul className="flex items-center gap-10 list-none text-nav">
-              <li className="font-semibold">Home</li>
+              <li className="font-semibold cursor-pointer">Home</li>
               <Link to="services" smooth={true} duration={500}>
-                <li>Services</li>
+                <li className="cursor-pointer">Services</li>
               </Link>
               <Link to="whoweare" smooth={true} duration={500}>
-                <li>About Us</li>
+                <li className="cursor-pointer">About Us</li>
               </Link>
               <Link to="store" smooth={true} duration={500}>
-                <li>Products</li>
+                <li className="cursor-pointer">Products</li>
               </Link>
             </ul>
           </div>
@@ -128,15 +128,21 @@ const Navbar = () => {
           {open && (
             <div className="absolute right-0 mt-1.5 bg-white shadow rounded p-4  navlinks z-50 w-[183px]  text-sm">
               <ul className="flex flex-col gap-4 list-none text-nav pb-4">
-                <li className="font-semibold">Home</li>
+                <li className="font-semibold cursor-pointer">Home</li>
                 <Link to="services" smooth={true} duration={500}>
-                  <li>Services</li>
+                  <li onClick={() => setOpen(false)} className="cursor-pointer">
+                    Services
+                  </li>
                 </Link>
                 <Link to="whoweare" smooth={true} duration={500}>
-                  <li>About Us</li>
+                  <li onClick={() => setOpen(false)} className="cursor-pointer">
+                    About Us
+                  </li>
                 </Link>
                 <Link to="store" smooth={true} duration={500}>
-                  <li>Products</li>
+                  <li onClick={() => setOpen(false)} className="cursor-pointer">
+                    Products
+                  </li>
                 </Link>
               </ul>
               <Button value="Get In Touch" secondary />
