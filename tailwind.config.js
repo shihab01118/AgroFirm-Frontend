@@ -14,11 +14,14 @@ export default {
       footer: "#F8F7F0",
       ash: "#999999",
       nav: "#1A1A1A",
-      transparent: "#FFFFFF00"
+      transparent: "#FFFFFF00",
+      black: "#000000",
     },
     fontFamily: {
       poppins: "'Poppins', sans-serif",
       signika: "'Signika', sans-serif",
+      tiro: "'Tiro Bangla', serif",
+      noto: "'Noto Sans Bengali', sans-serif",
     },
     extend: {},
   },

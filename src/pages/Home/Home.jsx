@@ -59,9 +59,10 @@ const Home = () => {
         title="Scroll to top"
       >
         <button
-          className={`w-14 h-14 lg:w-20 lg:h-20 rounded-full bg-secondary flex justify-center items-center transition duration-200 hover:bg-secondaryDark `}
+          className={`w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-[#ccc] flex flex-col gap-1 justify-center items-center transition duration-200`}
         >
-          <FaArrowUpLong className={`text-title text-2xl`} />
+          <span className="text-title text-sm font-medium">Top</span>
+          <FaArrowUpLong className={`text-primary text-2xl animate-bounce`} />
         </button>
       </div>
     </>

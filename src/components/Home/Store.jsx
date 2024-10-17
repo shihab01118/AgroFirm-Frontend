@@ -4,10 +4,14 @@ import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 // images
 import StoreBg from "../../assets/images/StoreBG.png";
 import Vegetables from "../../assets/images/Vagitables.png";
-import Slide1 from "../../assets/images/Slider1.png";
-import Slide2 from "../../assets/images/Slider2.png";
-import Slide3 from "../../assets/images/Slider3.png";
-import Slide4 from "../../assets/images/Slider4.png";
+import Slide1 from "../../assets/slider-images/slider-1.jpeg";
+import Slide2 from "../../assets/slider-images/slider-2.jpeg";
+import Slide3 from "../../assets/slider-images/slider-3.jpeg";
+import Slide4 from "../../assets/slider-images/slider-4.jpeg";
+import Slide5 from "../../assets/slider-images/slider-5.jpeg";
+import Slide6 from "../../assets/slider-images/slider-6.jpeg";
+import Slide7 from "../../assets/slider-images/slider-7.jpeg";
+import Slide8 from "../../assets/slider-images/slider-8.jpeg";
 
 // components
 import Button from "../shared/Button/Button";
@@ -18,7 +22,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 const Store = () => {
-
   return (
     <section
       className="bg-cover lg:bg-center bg-right bg-no-repeat lg:min-h-screen relative py-24"
@@ -45,8 +48,8 @@ const Store = () => {
       </div>
 
       {/* slider */}
-      <div className="mt-24">
-      <Swiper
+      <div className="mt-24 max-w-[1200px] lg:mx-auto w-full px-4">
+        <Swiper
           effect="coverflow"
           grabCursor={true}
           centeredSlides={true}
@@ -63,27 +66,11 @@ const Store = () => {
           modules={[EffectCoverflow, Pagination, Autoplay]}
           className="mySwiper w-full"
         >
-          <SwiperSlide>
-            <img src={Slide3} alt="slider-1" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Slide2} alt="slider-2" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Slide3} alt="slider-3" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Slide2} alt="slider-4" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Slide1} alt="slider-4" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Slide4} alt="slider-4" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Slide3} alt="slider-4" />
-          </SwiperSlide>
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <img src={slide} alt="img" />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>
@@ -91,3 +78,5 @@ const Store = () => {
 };
 
 export default Store;
+
+const slides = [Slide1, Slide2, Slide3, Slide4, Slide5, Slide6, Slide7, Slide8];

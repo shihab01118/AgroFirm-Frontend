@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 
 // images
 import sectionBG from "../../assets/images/WhoWeAreBG.png";
-import Farmer from "../../assets/images/WhoWeAre.png";
+import Farmer from "../../assets/images/Commited.jpg";
 
 // icons
 import { FaCheckCircle } from "react-icons/fa";
@@ -19,7 +19,7 @@ const WhoWeAre = () => {
        items-center gap-16"
       >
         <div className="w-full relative">
-          <img src={Farmer} alt="Farmer" />
+          <img src={Farmer} alt="Farmer" className="rounded-[28px]" />
 
           <div className="bg-secondary absolute right-0 bottom-0 w-[41%] h-[31%] rounded-[28px] px-3 py-1 lg:p-4 ">
             <div className="text-list font-signika font-semibold text-5xl lg:text-7xl border-b-2 w-fit border-b-[#666666] border-opacity-30 pb-1 mx-auto lg:mx-0">

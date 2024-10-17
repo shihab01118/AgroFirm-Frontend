@@ -10,9 +10,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 // images
 import ServicesBG from "../../assets/images/ServicesBG.png";
-import Service1 from "../../assets/images/Card1.png";
-import Service2 from "../../assets/images/Card2.png";
-import Service3 from "../../assets/images/Card3.png";
+import Service1 from "../../assets/images/Harvest.jpg";
+import Service2 from "../../assets/images/Farming.jpg";
+import Service3 from "../../assets/images/Soil.jpg";
 
 const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,10 +29,10 @@ const Services = () => {
         }
       }
     };
-  
+
     window.addEventListener("resize", handleResize);
     handleResize(); // Call it once to set the initial state
-  
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -98,7 +98,7 @@ const Services = () => {
                 <img
                   src={card.image}
                   alt="service card"
-                  className="rounded-2xl mb-8 w-full lg:w-fit"
+                  className="rounded-2xl mb-8 w-full lg:w-[339px]"
                 />
                 <div className="flex gap-1.5 items-center mb-3">
                   <GoDotFill className="text-secondary" />

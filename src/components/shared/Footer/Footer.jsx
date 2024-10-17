@@ -32,13 +32,13 @@ const Footer = () => {
               <div className="w-8 h-8 lg:w-[50px] lg:h-[50px] rounded-full bg-white flex justify-center items-center">
                 <FaPhoneAlt className="text-list lg:text-xl" />
               </div>
-              <span className="text-sm lg:text-base">+ 1(212) 000-000</span>
+              <span className="text-sm lg:text-base">+88 01318 252029</span>
             </div>
             <div className="flex items-center gap-1.5 lg:gap-3">
               <div className="w-8 h-8 lg:w-[50px] lg:h-[50px] rounded-full bg-white flex justify-center items-center">
                 <FaEnvelope className="text-list lg:text-xl" />
               </div>
-              <span className="text-sm lg:text-base">example@gmail.com</span>
+              <span className="text-sm lg:text-base">prantoardi@gmail.com</span>
             </div>
           </div>
         </div>
@@ -89,9 +89,9 @@ const Footer = () => {
                     Our address
                   </p>
                   <div className="space-y-2 text-[15px] text-body">
-                    <p>Old Westbury</p>
-                    <p>200,New York,</p>
-                    <p>United States</p>
+                    <p>Pranto ARDI</p>
+                    <p>Haripur, Meghna</p>
+                    <p>Comilla, Bangladesh</p>
                   </div>
                 </div>
                 <div className="col-span-2 lg:col-span-1">

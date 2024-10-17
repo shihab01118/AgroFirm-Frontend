@@ -33,21 +33,26 @@ const FreeQuote = () => {
         </div>
 
         <div className="w-full lg:w-1/2">
-          <p className="text-white leading-7 max-w-lg mb-10 pt-6">
-            Lorem ipsum dolor sit amet consectetur. Amet mauris nam ornare
-            tempus. Enim ultrices massa nibh ut adipiscing eu dignissim erat.
+          <p className="text-white leading-6 max-w-lg mb-10 pt-6 font-noto">
+            প্রান্ত ফসলের উৎপাদনশীলতা বাড়াতে ও কৃষকদের প্রশিক্ষণ দিয়ে সহায়তা
+            করে। তারা আধুনিক কৃষি প্রযুক্তি ব্যবহার করে উৎপাদনশীলতা বাড়ায় এবং
+            কৃষকদের প্রশিক্ষণ ও সহায়তা প্রদান করে।
           </p>
           <div className="flex flex-col">
             {quotes.map((item) => (
               <div
                 key={item?.id}
-                className="hover:bg-white hover:rounded-lg px-2 lg:px-4 py-5 border-b border-white border-opacity-20 flex items-center gap-3.5 lg:gap-8 group transition-all duration-150 row"
+                className="hover:bg-white hover:rounded-lg px-2 lg:px-4 py-5 border-b border-white border-opacity-20 flex items-center gap-3.5 lg:gap-8 group transition-all duration-150 row font-noto"
               >
                 <h4 className="text-title font-medium text-4xl lg:text-7xl group-hover:text-primary number w-12 lg:w-auto">
                   {item?.no}
                 </h4>
-                <p className="text-white group-hover:text-primary leading-7 lg:text-xl font-medium min-w-[135px] lg:w-auto">{item?.title}</p>
-                <p className="text-white text-sm lg:text-base text-opacity-60 group-hover:text-body leading-6">{item?.description}</p>
+                <p className="text-white group-hover:text-primary leading-7 lg:text-xl font-medium min-w-[135px] lg:w-auto">
+                  {item?.title}
+                </p>
+                <p className="text-white text-xs lg:text-sm text-opacity-60 group-hover:text-body leading-6">
+                  {item?.description}
+                </p>
               </div>
             ))}
           </div>
@@ -62,26 +67,30 @@ export default FreeQuote;
 const quotes = [
   {
     id: 1,
-    no: "01",
-    title: "Schedule Your Experience",
-    description: "Quisqu tell us risus adpis viera bibe um urna.",
+    no: "০১",
+    title: "ফসল গবেষণা ও উন্নয়ন",
+    description:
+      "প্রান্ত বিভিন্ন উচ্চ ফলনশীল ও পুষ্টিকর ফসল নিয়ে ব্যাপক গবেষণা করে। ফসলগুলির উৎপাদন এবং গুণমান উন্নত করাই প্রান্তর লক্ষ্য। ",
   },
   {
     id: 2,
-    no: "02",
-    title: "Get Profession Advice",
-    description: "Quisqu tell us risus adpis viera bibe um urna.",
+    no: "০২",
+    title: "কৃষি প্রযুক্তি",
+    description:
+      "উৎপাদনশীলতা এবং দক্ষতা বাড়াতে প্রান্ত আধুনিক কৃষি যন্ত্রপাতি, নির্ভুল কৃষি এবং টেকশই কৃষি পদ্ধতি ব্যাবহার করছে।",
   },
   {
     id: 3,
-    no: "03",
-    title: "Meet Our Expert Farmer",
-    description: "Quisqu tell us risus adpis viera bibe um urna.",
+    no: "০৩",
+    title: "কৃষক সাবলীকরন",
+    description:
+      "প্রান্ত কৃষকদের প্রশিক্ষন এবং সহায়তা প্রদান করে, তাদের টেকশই কৃষি পদ্ধতি গ্রহণ এবং তাদের জীবনযাপন উন্নত করার জন্য জ্ঞান ও দক্ষতা দিয়ে কাজ করছে।",
   },
   {
     id: 4,
-    no: "04",
-    title: "Now Get Best Products",
-    description: "Quisqu tell us risus adpis viera bibe um urna.",
+    no: "০৪",
+    title: "বাজার বৃদ্ধি",
+    description:
+      "কৃষকদের তাদের কৃষি পণ্যের জন্য ন্যায্য মূল্য নিশ্চিত করে দেশীয় এবং আন্তর্জাতিক বাজারে এক্সেস করতে সহায়তা করা হয় এবং রপ্তানিতে উৎসাহিত করা হয়।",
   },
 ];

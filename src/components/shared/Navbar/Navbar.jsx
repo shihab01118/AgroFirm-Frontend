@@ -25,13 +25,13 @@ const Navbar = () => {
             <div className="flex gap-2.5 items-center text-white text-sm">
               <FaPhoneAlt />
               <p>
-                <a href="tel:800 000 0000">800 000 0000</a>
+                <a href="tel:+8801318252029">+88 01318 252029</a>
               </p>
             </div>
             <div className="flex gap-2.5 items-center text-white text-sm">
               <FaEnvelope />
               <p>
-                <a href="mailto:example@gmail.com">example@gmail.com</a>
+                <a href="mailto:prantoardi@gmail.com">prantoardi@gmail.com</a>
               </p>
             </div>
             <div className="flex gap-2.5 items-center text-white text-sm">
@@ -72,13 +72,13 @@ const Navbar = () => {
           <div className="flex gap-2.5 items-center text-white text-sm">
             <FaPhoneAlt />
             <p>
-              <a href="tel:800 000 0000">800 000 0000</a>
+              <a href="tel:+8801318252029">+88 01318 252029</a>
             </p>
           </div>
           <div className="flex gap-2.5 items-center text-white text-sm">
             <FaEnvelope />
             <p>
-              <a href="mailto:example@gmail.com">example@gmail.com</a>
+              <a href="mailto:prantoardi@gmail.com">prantoardi@gmail.com</a>
             </p>
           </div>
         </div>
