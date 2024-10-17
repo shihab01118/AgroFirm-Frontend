@@ -53,7 +53,6 @@ const Store = () => {
           effect="coverflow"
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={3}
           loop={true}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           coverflowEffect={{
@@ -65,6 +64,14 @@ const Store = () => {
           pagination={{ clickable: true }}
           modules={[EffectCoverflow, Pagination, Autoplay]}
           className="mySwiper w-full"
+          breakpoints={{
+            1024: {
+              slidesPerView: 2,
+            },
+            0: {
+              slidesPerView: 1,
+            },
+          }}
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>

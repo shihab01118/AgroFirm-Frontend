@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <div className="py-20 lg:hidden">
+      <div className="py-20 lg:hidden bg-[#f1f2f3]">
         <Features />
       </div>
       <div id="whoweare">

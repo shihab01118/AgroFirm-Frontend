@@ -12,9 +12,15 @@ const Banner = () => {
       <div className="max-w-[1200px] w-full mx-auto pt-24 lg:pt-[130px] pb-24 px-4 lg:px-0 text-white relative">
         <div className="w-full max-w-2xl">
           <p className="text-sm px-5 py-1 border border-white rounded-full font-noto w-fit">
-          টেকসই কৃষিক্ষেত্রের অগ্রদূত
+            টেকসই কৃষিক্ষেত্রের অগ্রদূত
           </p>
-          <h1 className="font-semibold font-noto text-5xl lg:text-7xl my-6" style={{lineHeight: "88px"}}>
+          <h1
+            className="font-semibold font-noto text-[45px] lg:text-7xl my-6"
+            style={{
+              lineHeight: "normal",
+              "@media (min-width: 1024px)": { lineHeight: "88px" },
+            }}
+          >
             প্রান্ত এগ্রো রিসার্চ অ্যান্ড ডেভেলাপমেন্ট ইনিশিয়েটিভ
           </h1>
           <p className="text-sm leading-6 mb-6 border-t border-white border-opacity-40 pt-2 font-noto">
